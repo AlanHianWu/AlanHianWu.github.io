@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "Getting things running"
+categories: my update
+---
+
 testing posts
 
 {% highlight python %}
