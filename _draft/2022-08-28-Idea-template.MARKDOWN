@@ -19,7 +19,8 @@ categories: Programming update
   * Conversation
 
 #### Frontend Projects
-  * new stuff
+  * JavaScript Stuff
+  * New Stuff
 
 #### Programming Projects
   
