@@ -1,0 +1,2 @@
+name = Alan
+person = true
