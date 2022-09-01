@@ -4,7 +4,7 @@
 
   today = new Date();
 
-  dd = today.getDate();
+  dd = today.getDay();
 
   mm = today.getMonth() + 1;
 
@@ -17,5 +17,7 @@
   daylist = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
   console.log(dd, mm, yyyy, h, m);
+
+  console.log("Today is : ", daylist[dd]);
 
 }).call(this);

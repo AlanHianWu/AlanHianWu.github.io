@@ -6,6 +6,6 @@ categories: Ideas
 ---
 
 
+Using A ML to create music
 
-My thoughts on ML generated music
 
