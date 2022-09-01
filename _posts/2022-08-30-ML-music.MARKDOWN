@@ -1,6 +1,6 @@
 ---
 layout: test
-title:  "testing layouts: test"
+title:  "ML music"
 date:   2022-08-29
 categories: Ideas
 ---

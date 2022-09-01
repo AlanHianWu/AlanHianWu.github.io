@@ -1,6 +1,10 @@
 ---
 layout: default
 ---
+<head>
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+{% include scripts.html %}
 
 <div class="home">
   {%- if page.title -%}
@@ -9,13 +13,6 @@ layout: default
 
   {{ content }}
   <img src="/assets/portrait.jpg", height="120", width="100" >
-  <style>
-    img {
-      border-radius: 50%;
-    }
-  </style>
-  
-
 
   {% if site.paginate %}
     {% assign posts = paginator.posts %}
