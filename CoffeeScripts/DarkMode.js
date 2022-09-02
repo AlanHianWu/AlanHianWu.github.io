@@ -2,13 +2,18 @@
 (function() {
   var Dark, element;
 
-  Dark = function() {};
+  Dark = function() {
+    console.log('click! Dark Function');
+    return document.body.classList.toggle("toggleDarkMode");
+  };
 
-  element = document.body;
+  element = document.getElementById("button");
 
-  if (onclick) {
-    element.classList.toggle("toggleDarkMode");
-    console.log('click!');
+  if (element) {
+    element.addEventListener("click", Dark);
+    console.log("added");
+  } else {
+    console.log("Failed!");
   }
 
 }).call(this);
