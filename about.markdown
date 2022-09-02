@@ -1,5 +1,5 @@
 ---
-layout: animation_01
+layout: default
 title: About
 permalink: /about/
 ---
@@ -18,4 +18,6 @@ You can find the source code for Jekyll at GitHub:
 [jekyll-organization]: https://github.com/jekyll -->
 
 Hi, under construction
+
+
 
