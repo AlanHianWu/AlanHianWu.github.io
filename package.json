@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "coffeescript": "^2.7.0"
+  },
+  "dependencies": {
+    "three": "^0.144.0"
   }
 }
