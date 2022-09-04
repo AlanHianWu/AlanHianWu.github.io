@@ -3,15 +3,15 @@
   var Dark, element;
 
   Dark = function() {
-    console.log('click! Dark Function');
+    console.log('click! Dark Function ran');
     return document.body.classList.toggle("toggleDarkMode");
   };
 
-  element = document.getElementById("button");
+  element = document.getElementById("button-darkMode");
 
   if (element) {
     element.addEventListener("click", Dark);
-    console.log("added");
+    console.log("EventListener added");
   } else {
     console.log("Failed!");
   }

@@ -34,6 +34,8 @@ plugins:
   - jekyll-feed
   - jekyll-coffeescript
 
+sass:
+    style: compressed
 
 
 # Exclude from processing.

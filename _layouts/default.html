@@ -1,7 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
     {%- include head.html -%}
+
+    <link rel="stylesheet" href="{{ '/css/main.css' | relative_url }}" />
+    
     <body>
     {%- include header.html -%}
     <main class="page-content" aria-label="Content">
