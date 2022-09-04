@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    {%- include head.html -%}
+    {%- include box-head.html -%}
 
-    <body>
+
+    <body id="box-body">
         {%- include header.html -%}
+
+
         <main class="page-content" aria-label="Content">
             <div class="wrapper">
 
@@ -15,9 +18,33 @@
                         <div class = “content”>
                             &#127856;
                         </div>
+  
                         <div id = “inputs”>
-                            <input type="range" name="" id=""  min="10" max="100">
+
+                            <div id="sliders">
+                                <h3>Border: </h3>
+                                <input type="range" name="" id="border-range"  min="10" max="100">
+                                
+                                <h3>Padding: </h3>
+                                <input type="range" name="" id="padding-range" min="10" max="100">
+                                
+                                <h3>Content: </h3>
+                                <input type="range" name="" id="content-range" min="10" max="100">
+                            </div>
+
                         </div>
+
+                        <div id = “colors”>
+                            <h3>Border:</h3>
+                            <input type="color" name="" id="border-color">
+                            
+                            <h3>Padding</h3>
+                            <input type="color" name="" id="padding-color">
+                            
+                            <h3>Content</h3>
+                            <input type="color" name="" id="content-color">
+                        </div>
+            
                     </div>
                 </div>
 
@@ -26,4 +53,5 @@
         </main>
         {%- include footer.html -%}
     </body>
+
 </html>
