@@ -12,26 +12,39 @@ contentBox = document.querySelector(".content")
 
 
 
-borderRange.addEventListener "change",  ->
+
+css = document.styleSheets[1]
+
+# totalrules = if css.cssRules then css.cssRules.length else css.rules.length
+
+# css.deleteRule("body{background-color}")
+# css.insertRule("body{background-color: yellow;}")
+
+
+# .documentElement.style.setProperty('padding',  900 + "px");
+
+# console.log css.cssRules
+
+# borderRange.addEventListener "change",  ->
     # console.log("border")
-    borderBox.getComputedStyle.padding = borderRange.value + "px"
+ 
 
-paddingRange.addEventListener "change", ->
-    # console.log("padding")
-    paddingBox.getComputedStyle.padding = paddingRange.value + "px"
+# paddingRange.addEventListener "change", ->
+#     # console.log("padding")
+#     paddingBox.getComputedStyle.padding = paddingRange.value + "px"
 
-contentRange.addEventListener "change", ->
-    # console.log("content")
-    contentBox.getComputedStyle.padding = contentRange.value + "px"
+# contentRange.addEventListener "change", ->
+#     # console.log("content")
+#     contentBox.getComputedStyle.padding = contentRange.value + "px"
 
-borderColor.addEventListener "change", ->
-    # console.log("b color")
-    borderBox.getComputedStyle.backgroundColor = borderColor.value
+# borderColor.addEventListener "change", ->
+#     # console.log("b color")
+#     borderBox.getComputedStyle.backgroundColor = borderColor.value
 
-paddingColor.addEventListener "change", ->
-    # console.log("p color")
-    paddingBox.getComputedStyle.backgroundColor = paddingColor.value
+# paddingColor.addEventListener "change", ->
+#     # console.log("p color")
+#     paddingBox.getComputedStyle.backgroundColor = paddingColor.value
 
-contentColor.addEventListener "change", ->
-    # console.log("c color")
-    contentBox.getComputedStyle.backgroundColor = contentColor.value
+# contentColor.addEventListener "change", ->
+#     # console.log("c color")
+#     contentBox.getComputedStyle.backgroundColor = contentColor.value

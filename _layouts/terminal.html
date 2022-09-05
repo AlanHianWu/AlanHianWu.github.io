@@ -8,6 +8,9 @@
         <script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"></script>
         <link rel="stylesheet" href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css"/>
     </head>
+
+    {%- include header.html -%}
+
     <body>
         {{ content }}
 
@@ -23,4 +26,7 @@
         </script>
 
     </body>
+
+    {%- include footer.html -%}
+    
 </html>
