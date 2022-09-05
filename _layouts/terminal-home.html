@@ -2,11 +2,17 @@
 <!--    background: linear-gradient(to right, #ff416c, #ff4b2b); 
 background: linear-gradient(to right, #7f8c8d, #2c3e50);-->
 
+<script src="{{ 'CoffeeScripts/js/terminal.js' | relative_url }}" defer></script>
+
 <head>
     <style>
 
         body{
             font-family: 'Roboto', 'Helvetica Neue', 'Lucida Grande', sans-serif;
+        }
+
+        *, *:before, *:after{
+            box-sizing: inherit;
         }
 
         body, h1, h2, h3 p {
@@ -20,7 +26,7 @@ background: linear-gradient(to right, #7f8c8d, #2c3e50);-->
             background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
             background-size: 400% 400%;
             animation: gradient 15s ease infinite;
-            height: 100vh;
+
         }
 
         .mainCont{
