@@ -5,14 +5,31 @@ handleForm = (event) ->
     clearInput()
     addTextResult(textInput)
 
-    if textInput == "help"
-        addTextResult("Working on it, hopfully i'll have the APIs working")
+    if textInput == " @me/somedate/placeholder > help".trim()
+        addTextResult("Working on it, hopfully i'll have the APIs working and put up some cool things soon")
+    if textInput == " @me/somedate/placeholder > clear".trim()
+        clearDisplay()
 
     event.preventDefault()
 
+addPrefix = () ->
+    document.getElementById("terminalTextInput").value = " @me/somedate/placeholder > "
+
+    handleInput = (event) ->
+        oldvalue = document.getElementById("terminalTextInput").value
+    
+        if event and event.data == null
+            document.getElementById("terminalTextInput").value = " @me/somedate/placeholder > "
+        else
+            document.getElementById("terminalTextInput").value = oldvalue
+
+    handleInput()
+    document.getElementById("terminalTextInput").addEventListener "input", handleInput
+
+
 
 clearInput = ->
-    document.getElementById("terminalTextInput").value = "me/somedate/placeholder>"
+    document.getElementById("terminalTextInput").value = " @me/somedate/placeholder > "
 
 clearDisplay = ->
     document.getElementById("terminalResults").innerHTML = ""
@@ -27,10 +44,11 @@ addTextResult = (text)->
 
 # sequence goes here
 
-# document.getElementById('terminalTextInput').focus()
-
+document.getElementById('terminalTextInput').focus()
 form = document.getElementById("terminalInput")
 form.addEventListener 'submit', handleForm
-document.getElementById('terminalTextInput').value = 'me/somedate/placeholder>'
 
+addPrefix()
 
+# deafult
+addTextResult('Welcome to my web terminal nothing much to see so far though, only command is help & clear')
