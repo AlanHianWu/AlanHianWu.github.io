@@ -50,6 +50,7 @@ background: linear-gradient(to right, #7f8c8d, #2c3e50);-->
             padding: 12px 0 0 0;
             margin-top: -20px;
             font-family: 'Roboto Mono' monospace;
+            border-radius: 6px 6px 0 0;
             
             animation: 
             slideDownAnimation 1s ease-in-out 1s forwards,
@@ -92,26 +93,19 @@ background: linear-gradient(to right, #7f8c8d, #2c3e50);-->
 
         #terminalTextInput {
             background: black;
-            display: block;
             border: none;
             width: 100%;
+            height: 16px;
             color: white;
             padding: 12px 0 0 0;
             outline-width: 0;
-            font-size: 14px;
+            font-size: 16px;
             font-family: monospace;
+            border-radius: 0 0 6px 6px;
         }
 
-        .caret-block  {
-            background: black;
-            color: white;
-          }
-          
 
-        .caret-block > span {
-            background: white;
-            animation: blink 1s step-end infinite;
-        }
+        
 
         
         @keyframes gradient {
@@ -126,15 +120,6 @@ background: linear-gradient(to right, #7f8c8d, #2c3e50);-->
             }
         }
     
-        @keyframes blink {
-            from,
-            to {
-                background: transparent;
-            }
-            50% {
-                background: black;
-            }
-          }
 
         .empty-box{
             height: 200px;
@@ -159,7 +144,9 @@ background: linear-gradient(to right, #7f8c8d, #2c3e50);-->
                 </div>
 
                 <form id="terminalInput">
-                    <input id="terminalTextInput", type="text", , placeholder="Try typing help", autocomplete="off", autofocus ></input>
+
+                    <input id="terminalTextInput", type="text", autocomplete="off"></input>
+                    
                 </form>
 
             </div>
@@ -177,11 +164,6 @@ background: linear-gradient(to right, #7f8c8d, #2c3e50);-->
 
         
         </div>
-
-    <pre class="caret-block">
-        $ npm run buil<span>d</span>
-    </pre>
-            
 
     </body>
 
