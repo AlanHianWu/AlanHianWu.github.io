@@ -1,57 +1,54 @@
-form = document.getElementById("terminalInput")
-
+# functions goes here
 handleForm = (event) ->
     textInput = document.getElementById('terminalTextInput').value.trim()
-    console.log("input: ", textInput)
 
     clearInput()
-    addTextResult('> ' + textInput)
+    addTextResult(textInput)
 
-    if textInput == "help"
-        addTextResult("Working on it, hopfully i'll have the APIs working")
+    if textInput == " @me/somedate/placeholder > help".trim()
+        addTextResult("Working on it, hopfully i'll have the APIs working and put up some cool things soon")
+    if textInput == " @me/somedate/placeholder > clear".trim()
+        clearDisplay()
 
     event.preventDefault()
 
-form.addEventListener 'submit', handleForm
+addPrefix = () ->
+    document.getElementById("terminalTextInput").value = " @me/somedate/placeholder > "
 
-# document.addEventListener 'DOMContentLoaded', ->
-#     document.getElementsByTagName('form')[0].onsumit = (evt) ->
-#         evt.preventDefault()
-#         checkword()
-#         window.scrollTo(0, 150)
+    handleInput = (event) ->
+        oldvalue = document.getElementById("terminalTextInput").value
+    
+        if event and event.data == null
+            document.getElementById("terminalTextInput").value = " @me/somedate/placeholder > "
+        else
+            document.getElementById("terminalTextInput").value = oldvalue
 
-# reading key inputs
-# document.addEventListener('keydown', function(event) {
-#     if(event.keyCode == 37) {
-#         alert('Left was pressed');
-#     }
-#     else if(event.keyCode == 39) {
-#         alert('Right was pressed');
-#     }
-# });
+    handleInput()
+    document.getElementById("terminalTextInput").addEventListener "input", handleInput
 
-document.getElementById('terminalTextInput').focus()
-
-textResults = document.getElementById("terminalResults").innerHTML
 
 
 clearInput = ->
-    document.getElementById("terminalTextInput").value = ""
+    document.getElementById("terminalTextInput").value = " @me/somedate/placeholder > "
 
+clearDisplay = ->
+    document.getElementById("terminalResults").innerHTML = ""
 
-scrollToBottom = ->
-    console.log "scroll to Bottom"
-    termDivResults = document.getElementById('terminalResults')
-    termDivResults.scrollTop = termDivResults.scrollHeight
-
-scrollToBottom()
 
 addTextResult = (text)->
     document.getElementById("terminalResults").innerHTML += "<p>" + text + "</p>"
-    scrollToBottom()
 
 
 
-# var form = document.getElementById("myForm");
-# function handleForm(event) { event.preventDefault(); } 
-# form.addEventListener('submit', handleForm);
+
+
+# sequence goes here
+
+document.getElementById('terminalTextInput').focus()
+form = document.getElementById("terminalInput")
+form.addEventListener 'submit', handleForm
+
+addPrefix()
+
+# deafult
+addTextResult('Welcome to my web terminal nothing much to see so far though, only command is help & clear')
