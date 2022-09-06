@@ -2,8 +2,6 @@
 <!--    background: linear-gradient(to right, #ff416c, #ff4b2b); 
 background: linear-gradient(to right, #7f8c8d, #2c3e50);-->
 
-<script src="{{ 'CoffeeScripts/js/terminal.js' | relative_url }}" defer></script>
-
 <head>
     <style>
 
@@ -66,22 +64,30 @@ background: linear-gradient(to right, #7f8c8d, #2c3e50);-->
         }
 
         #terminalResults{
-            width: 100%;
+            width: 950px;
             height: 400px;
             padding: 12px;
-            overflow-y: auto;
+            margin: 0 0 0 0;
+            word-wrap:break-word;
             resize: none;
             border: none;
             font-size: 14px;
             line-height: 28px;
             display: block;
-            color: rgb(red, green, blue, 0.9);
+            color: white;
+            overflow: hidden;
+            font-family: monospace;
         }
 
         #terminalResults a{
             color: rgb(red, green, blue, 0.9);
             text-decoration: underline;
-        
+        }
+
+        #terminalResults p{
+            color: rgb(red, green, blue, 0.9);
+            line-height: 10px;
+            margin-bottom: 10px;
         }
 
         #terminalTextInput {
@@ -91,7 +97,20 @@ background: linear-gradient(to right, #7f8c8d, #2c3e50);-->
             width: 100%;
             color: white;
             padding: 12px 0 0 0;
+            outline-width: 0;
+            font-size: 14px;
+            font-family: monospace;
+        }
 
+        .caret-block  {
+            background: black;
+            color: white;
+          }
+          
+
+        .caret-block > span {
+            background: white;
+            animation: blink 1s step-end infinite;
         }
 
         
@@ -106,6 +125,16 @@ background: linear-gradient(to right, #7f8c8d, #2c3e50);-->
                 background-position: 0% 50%;
             }
         }
+    
+        @keyframes blink {
+            from,
+            to {
+                background: transparent;
+            }
+            50% {
+                background: black;
+            }
+          }
 
         .empty-box{
             height: 200px;
@@ -129,8 +158,8 @@ background: linear-gradient(to right, #7f8c8d, #2c3e50);-->
                     <div id="terminalResults"> </div>
                 </div>
 
-                <form>
-                    <input id="terminalTextInput", type="text", placeholder="Try typing help", autocomplete="off"> </input>
+                <form id="terminalInput">
+                    <input id="terminalTextInput", type="text", , placeholder="Try typing help", autocomplete="off", autofocus ></input>
                 </form>
 
             </div>
@@ -149,7 +178,9 @@ background: linear-gradient(to right, #7f8c8d, #2c3e50);-->
         
         </div>
 
-
+    <pre class="caret-block">
+        $ npm run buil<span>d</span>
+    </pre>
             
 
     </body>
@@ -158,23 +189,7 @@ background: linear-gradient(to right, #7f8c8d, #2c3e50);-->
 
 {%- include footer.html -%}
 
-<!-- 
-<script>
-    window.onload = function() {
-        terminal();
-      };
-    
-    function terminal(){
-    
-        var x = document.createElement("INPUT");
-        x.setAttribute("type", "text");
+<script src="{{ 'CoffeeScripts/js/terminal.js' | relative_url }}" defer></script>
 
-        document.body.appendChild(x);
-
-    }
-
-
-
-</script> -->
 
 
