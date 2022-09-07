@@ -28,17 +28,27 @@ h1, h2, h3, h4, h5, h6
 .grid-container
     display: grid
     grid-template-columns: auto auto auto
-    background-color: #2196F3
     padding: 10px
+    border-block: 10px
+    margin: 0
+
+.wrapper-home
+    max-width: -webkit-calc(1600px - (30px * 2))
+    max-width: calc(1600px - (30px * 2))
+    margin-right: auto
+    margin-left: auto
+    padding-right: 30px
+    padding-left: 30px
+
+@media screen and (max-width: 1600px) 
+    .wrapper-home 
+        max-width: -webkit-calc(1600px - (30px))
+        max-width: calc(1600px - (30px))
+        padding-right: 15px
+        padding-left: 15px
+    
 
 
-// #circle 
-//     width: 100px
-//     height: 100px
-//     background: red
-//     -moz-border-radius: 50px
-//     -webkit-border-radius: 50px
-//     border-radius: 50px
 
 #img-head
     position: absolute
@@ -54,9 +64,10 @@ h1, h2, h3, h4, h5, h6
     border: 5px
     border-radius: 50px
     padding: 0
-    margin: 0
+    margin: auto
     width: 100px
     height: 100px
     overflow: hidden
+    display: block
 
     

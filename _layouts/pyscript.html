@@ -1,15 +1,32 @@
 {%- include head.html -%}
+
 {%- include pyscript-head.html -%}
+<py-env>
+    - numpy
+    - matplotlib
+</py-env>
 
 {%- include header.html -%}
 
 <html>
     <body>
+    
 
         <div class="wrapper">
 
-            <py-script>
-                print('Hello World from pyscript')
+            <h1>Let's plot random numbers</h1>
+            <div id="plot"></div>
+
+            <py-script output="plot">
+                import matplotlib.pyplot as plt
+                import numpy as np
+
+                x = np.random.randn(1000)
+                y = np.random.randn(1000)
+
+                fig, ax = plt.subplots()
+                ax.scatter(x, y)
+                fig
             </py-script>
 
 
