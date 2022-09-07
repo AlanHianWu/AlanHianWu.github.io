@@ -1,5 +1,5 @@
 {%- include head.html -%}
-{%- include pyscript.html -%}
+{%- include pyscript-head.html -%}
 
 {%- include header.html -%}
 
@@ -7,12 +7,15 @@
     <body>
 
         <div class="wrapper">
+
             <py-script>
-                print('Hello world from pyscript')
+                print('Hello World from pyscript')
             </py-script>
 
 
             {{ content }}
+
+
         </div>
 
     </body>
