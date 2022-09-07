@@ -43,7 +43,7 @@
   };
 
   addTextResult = function(text) {
-    return document.getElementById("terminalResults").innerHTML += "<p>" + time() + "  " + text + "</p>";
+    return document.getElementById("terminalResults").innerHTML += "<p style='font-size:14px; color:#538b01; font-weight:bold; font:monospace; font-style:italic;'>" + time() + "  " + text + "</p>";
   };
 
   addRawTextResult = function(text) {

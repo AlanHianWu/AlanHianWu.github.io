@@ -43,7 +43,7 @@ clearDisplay = ->
 
 
 addTextResult = (text)->
-    document.getElementById("terminalResults").innerHTML += "<p>" + time() + "  " + text + "</p>"
+    document.getElementById("terminalResults").innerHTML += "<p style='font-size:14px; color:#538b01; font-weight:bold; font:monospace; font-style:italic;'>" + time() + "  " + text + "</p>"
 
 addRawTextResult = (text)->
     document.getElementById("terminalResults").innerHTML += "<p>" + text + "</p>"
