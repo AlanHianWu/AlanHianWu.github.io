@@ -25,7 +25,9 @@
       var oldvalue;
       oldvalue = document.getElementById("terminalTextInput").value;
       if (event && event.data === null) {
-        return document.getElementById("terminalTextInput").value = global;
+        if (global.length > document.getElementById("terminalTextInput").value.length) {
+          return document.getElementById("terminalTextInput").value = global;
+        }
       } else {
         return document.getElementById("terminalTextInput").value = oldvalue;
       }
@@ -65,7 +67,6 @@
     yy = today.getFullYear().toString().substring(2, 4);
     h = today.getHours().toString();
     m = today.getMinutes().toString();
-    // console.log(mm.concat('-', dd, '-', yy, '-', h,'-', m))
     return mm.concat('-', dd, '-', yy, '/', h, ':', m);
   };
 
@@ -74,6 +75,10 @@
     today = new Date();
     h = today.getHours().toString();
     m = today.getMinutes().toString();
+    
+    // fix leading zeros
+    h = ('0' + h).slice(-2);
+    m = ('0' + m).slice(-2);
     return h.concat(':', m);
   };
 

@@ -7,9 +7,6 @@ handleForm = (event) ->
     clearInput()
     addTextResult(textInput)
 
-
-
-
     if textInput == global.concat("help").trim()
 
         addRawTextResult("Working on it, hopfully i'll have the APIs working and put up some cool things soon")
@@ -26,7 +23,8 @@ addPrefix = () ->
         oldvalue = document.getElementById("terminalTextInput").value
     
         if event and event.data == null
-            document.getElementById("terminalTextInput").value = global
+            if global.length > document.getElementById("terminalTextInput").value.length
+                document.getElementById("terminalTextInput").value = global
         else
             document.getElementById("terminalTextInput").value = oldvalue
 
@@ -61,7 +59,6 @@ FullDate = ->
     yy = today.getFullYear().toString().substring(2, 4)
     h = today.getHours().toString()
     m = today.getMinutes().toString()
-    # console.log(mm.concat('-', dd, '-', yy, '-', h,'-', m))
 
 
     return mm.concat('-', dd, '-', yy, '/', h,':', m)
@@ -71,6 +68,10 @@ time = ->
     today = new Date
     h = today.getHours().toString()
     m = today.getMinutes().toString()
+    
+    # fix leading zeros
+    h = ('0'+ h).slice(-2)
+    m = ('0'+ m).slice(-2)
     return h.concat(':', m)
 
 
