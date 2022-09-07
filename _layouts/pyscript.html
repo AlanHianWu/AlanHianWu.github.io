@@ -1,0 +1,23 @@
+{%- include head.html -%}
+{%- include pyscript.html -%}
+
+{%- include header.html -%}
+
+<html>
+    <body>
+
+        <div class="wrapper">
+            <py-script>
+                print('Hello world from pyscript')
+            </py-script>
+
+
+            {{ content }}
+        </div>
+
+    </body>
+</html>
+
+
+{%- include footer.html -%}
+
