@@ -1,0 +1,28 @@
+#box-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aquamarine;
+  flex-direction: column; }
+
+.border {
+  background-color: #0b67c4;
+  padding: 200px; }
+
+.padding {
+  background-color: #42b3dd;
+  padding: 200px; }
+
+.content {
+  background-color: #299baf;
+  padding: 200px;
+  font-size: 200px; }
+
+#inputs {
+  display: flex;
+  flex-direction: row; }
+
+#sliders {
+  margin-right: 30px; }
+
+/*# sourceMappingURL=box.css.map */

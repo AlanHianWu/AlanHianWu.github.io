@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  background: white; }
+
+.toggleDarkMode {
+  background: black;
+  color: white; }
+  .toggleDarkMode h1, .toggleDarkMode h2, .toggleDarkMode h3, .toggleDarkMode h4, .toggleDarkMode h5, .toggleDarkMode h6 {
+    color: white; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: black; }
+
+#button-darkMode {
+  background-color: #34495e;
+  border-radius: 4px;
+  color: white; }
+
+#button-darkMode:hover {
+  background-color: #243445;
+  text-decoration: underline;
+  cursor: pointer; }
+
+#button-darkMode:active {
+  transform: translateY(4px); }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  border-block: 10px;
+  margin: 0; }
+
+.wrapper-home {
+  max-width: -webkit-calc(1200px - (30px * 2));
+  max-width: calc(1200px - (30px * 2));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0;
+  padding-left: 0; }
+
+@media screen and (max-width: 1200px) {
+  .wrapper-home {
+    max-width: -webkit-calc(1200px - (30px));
+    max-width: calc(1200px - (30px));
+    padding-right: 0;
+    padding-left: 0; } }
+#img-head {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  right: -9999px;
+  bottom: -9999px;
+  margin: auto; }
+
+#image-portrait {
+  position: relative;
+  border: 5px;
+  border-radius: 50px;
+  padding: 0;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  display: block; }
+
+#bio {
+  text-align: center; }
+
+/*# sourceMappingURL=base.css.map */

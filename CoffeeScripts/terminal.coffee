@@ -17,7 +17,7 @@ handleForm = (event) ->
     event.preventDefault()
 
 addPrefix = () ->
-    document.getElementById("terminalTextInput").value = global
+    document.getElementById("terminalTextInput").value = global_prop
 
     handleInput = (event) ->
         oldvalue = document.getElementById("terminalTextInput").value
@@ -41,7 +41,7 @@ clearDisplay = ->
 
 
 addTextResult = (text)->
-    document.getElementById("terminalResults").innerHTML += "<p style='font-size:14px; color:#538b01; font-weight:bold; font:monospace; font-style:italic;'>" + time() + "  " + text + "</p>"
+    document.getElementById("terminalResults").innerHTML += "<p><t id='terminal-time'>" + time() + "</t> <t> " + text + "</t></p>"
 
 addRawTextResult = (text)->
     document.getElementById("terminalResults").innerHTML += "<p>" + text + "</p>"
@@ -77,7 +77,8 @@ time = ->
 
 # sequence goes here
 
-global = " me@" + "webTerminal > "
+global = " <t id='terminal-user'>me@</t>" + "<t id='terminal-name'>webTerminal > </t>"
+global_prop = "me@" + "webTerminal > "
 
 document.getElementById('terminalTextInput').focus()
 form = document.getElementById("terminalInput")

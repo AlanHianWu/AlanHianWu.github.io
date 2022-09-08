@@ -64,10 +64,15 @@ body, h1, h2, h3 p {
   #terminalResults::-webkit-scrollbar {
     background: transparent;
     width: 0px; }
+  #terminalResults #terminal-time {
+    color: red; }
+  #terminalResults #terminal-user {
+    color: blue; }
+  #terminalResults #terminal-name {
+    color: green; }
 
 #terminalResults a {
-  color: rgba(255, 255, 255, 0.9);
-  text-decoration: underline; }
+  color: rgba(255, 255, 255, 0.9); }
 
 #terminalResults p {
   color: rgba(255, 255, 255, 0.9);
