@@ -48,8 +48,8 @@ body, h1, h2, h3 p {
 #terminalResults {
   width: 950px;
   height: 400px;
-  padding: 12px;
-  margin: 0 0 0 0;
+  padding: 12px 12px 25px 12px;
+  margin: 0;
   word-wrap: break-word;
   resize: none;
   border: none;

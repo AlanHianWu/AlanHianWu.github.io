@@ -53,7 +53,7 @@ addRawTextResult = (text)->
 
 scrollDown = ->
     terminal = document.getElementById("terminalResults")
-    terminal.scrollTop = terminal.scrollHeight
+    terminal.scrollTop = terminal.scrollHeight 
 
 
 FullDate = ->
