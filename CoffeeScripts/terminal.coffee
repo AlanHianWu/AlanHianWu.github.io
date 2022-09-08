@@ -7,10 +7,10 @@ handleForm = (event) ->
     clearInput()
 
     user = textInput.substring(0,3)
-    terminal_name = textInput.substring(3, 17)
+    terminal_name = textInput.substring(3, 18)
 
     # add formating here
-    addTextResult(" <t id='terminal-user'>" + user + "</t>" + "<t id='terminal-name'>" + terminal_name + "</t>" + textInput.substring(17, ))
+    addTextResult(" <t id='terminal-user'>" + user + "</t>" + "<t id='terminal-name'>" + terminal_name + "</t>" + textInput.substring(18, ))
 
     if textInput == global.concat("help").trim()
 
@@ -134,7 +134,7 @@ time = ->
 
 # sequence goes here
 
-global = "me@" + "webTerminal > "
+global = "me@" + "webTerminal >  "
 
 document.getElementById('terminalTextInput').focus()
 form = document.getElementById("terminalInput")
