@@ -1,0 +1,21 @@
+---
+layout: post
+title:  "WebIDE Blog"
+categories: Blog
+Blog: true
+---
+
+---
+# Updates On This Project 
+---
+##### Sep 8 2022
+
+trying out a new format to log project development here,
+
+so I always wanted to make a webIDE, this mainly stemed from praticing coding promblems in college and online with websites such as hackerrank and leetcode.
+
+So far I am at a lost to how to tackle this project, by the looks of it I'll need alot of javascript and some API's to link it to the backend where I can run a server to actually test the code. but this is just a static site and I don't want to pay for a server as of right now. So my plan is to some how spin up a local server instance on the client side with some tech out there, so I can call on that instead.
+
+I'll have to think about the backend later first things first, gonna build the UI first, in college we would first draw up UMLs and specs first, but since this my just my website I'll just start by throwing stuff to the wall and see what sticks (naming just for UI design and what tech to use)
+
+---

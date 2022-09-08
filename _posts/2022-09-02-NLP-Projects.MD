@@ -2,7 +2,8 @@
 layout: projects
 title:  "NLP Projects"
 date:   2022-09-02
-categories: Projects
+categories: projects
+Blog: false
 ---
 
 There are only two project I have done so far that used NLP

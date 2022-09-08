@@ -3,6 +3,7 @@ layout: post
 title:  "Getting things running"
 date:   2022-08-27
 categories: my update
+Blog: true
 ---
 
 testing posts

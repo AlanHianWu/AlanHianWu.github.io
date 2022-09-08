@@ -11,7 +11,6 @@
 
   if (element) {
     element.addEventListener("click", Dark);
-    console.log("EventListener added");
   } else {
     console.log("Failed!");
   }
