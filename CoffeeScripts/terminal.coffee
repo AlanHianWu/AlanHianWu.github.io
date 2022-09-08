@@ -5,7 +5,12 @@ handleForm = (event) ->
 
     scrollDown()
     clearInput()
-    addTextResult(textInput)
+
+    user = textInput.substring(0,3)
+    terminal_name = textInput.substring(3, 17)
+
+    # add formating here
+    addTextResult(" <t id='terminal-user'>" + user + "</t>" + "<t id='terminal-name'>" + terminal_name + "</t>" + textInput.substring(17, ))
 
     if textInput == global.concat("help").trim()
 
@@ -17,7 +22,7 @@ handleForm = (event) ->
     event.preventDefault()
 
 addPrefix = () ->
-    document.getElementById("terminalTextInput").value = global_prop
+    document.getElementById("terminalTextInput").value = global
 
     handleInput = (event) ->
         oldvalue = document.getElementById("terminalTextInput").value
@@ -75,10 +80,61 @@ time = ->
     return h.concat(':', m)
 
 
+# Make the DIV element draggable:
+
+# dragElement = (elmnt) ->
+#     pos1 = 0
+#     pos2 = 0
+#     pos3 = 0
+#     pos4 = 0
+
+#     dragMouseDown = (e) ->
+#         e = e || window.event
+#         e.preventDefault()
+#         # get the mouse cursor position at startup:
+#         pos3 = e.clientX
+#         pos4 = e.clientY
+#         document.onmouseup = closeDragElement
+#         # call a function whenever the cursor moves:
+#         document.onmousemove = elementDrag
+
+
+#     elementDrag = (e) ->
+#         e = e || window.event
+#         e.preventDefault()
+#         # calculate the new cursor position:
+#         pos1 = pos3 - e.clientX
+#         pos2 = pos4 - e.clientY
+#         pos3 = e.clientX
+#         pos4 = e.clientY
+#         # set the elements new position:
+#         elmnt.style.top = (elmnt.offsetTop - pos2) + "px"
+#         elmnt.style.left = (elmnt.offsetLeft - pos1) + "px"
+        
+
+#     closeDragElement = ->
+#         # stop moving when mouse button is released:
+#         document.onmouseup = null
+#         document.onmousemove = null
+
+
+#     if document.getElementById(elmnt.id + "header")
+#         # if present, the header is where you move the DIV from:
+#         document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown
+#     else
+#         # otherwise, move the DIV from anywhere inside the DIV:
+#         elmnt.onmousedown = dragMouseDown
+  
+
+
+
+
+
+
+
 # sequence goes here
 
-global = " <t id='terminal-user'>me@</t>" + "<t id='terminal-name'>webTerminal > </t>"
-global_prop = "me@" + "webTerminal > "
+global = "me@" + "webTerminal > "
 
 document.getElementById('terminalTextInput').focus()
 form = document.getElementById("terminalInput")
@@ -88,3 +144,6 @@ addPrefix()
 
 # deafult
 addRawTextResult('Welcome to my web terminal nothing much to see so far though, only command is help & clear')
+
+
+# dragElement(document.getElementById("mydiv"))
