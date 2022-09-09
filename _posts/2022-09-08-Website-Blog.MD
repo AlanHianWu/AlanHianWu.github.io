@@ -8,6 +8,10 @@ Blog: true
 ---
 # Updates On This Project 
 ---
+##### Sep 9 2022
+Bit of a slow start today
+
+---
 ##### Sep 8 2022
 
 This website use's jekyll, I was thinking of using other things like Reactjs, vuejs etc. but since everything was already set up on github and I have very little experience working on UI design and frontend stuff I ended up working with jekyll.

@@ -1,7 +1,66 @@
-.Editor
-    height: 100px
-    width: 100px
-    background: pink
+main
+    background: linear-gradient(-45deg, #355C7D, #6C5B7B, #C06C84, #F67280, #F8B195)
+    background-size: 600% 600%
+    animation: gradient 15s ease infinite
 
 
+h1, h2, h3, h4, h5, h6
+    color: white
+    font-family: Droid Sans Mono
 
+#title
+    text-align: center
+
+.Editor-Container
+    position: relative
+    height: 900px
+    width: 100%
+    background: #003366
+    border-radius: 6px
+    padding: 0
+    margin: 0
+
+    overflow: hidden
+
+
+// .Container
+//     height: 100%
+//     overflow: auto
+
+
+.col
+    height: 100%
+
+    // diable scroll bars
+    overflow: auto
+    scrollbar-width: none // Firefox 
+    -ms-overflow-style: none  // IE 10+ 
+
+    &::-webkit-scrollbar 
+        background: transparent // Chrome/Safari/Webkit 
+        width: 0px
+
+
+pre
+    display: block
+    font-family: Droid Sans Mono
+    font-size: 15px
+    color: white
+    background: #192841
+    margin: 0
+    padding: 12px
+    border: 0
+    border-radius: 0
+
+code
+    background: #192841
+
+@keyframes gradient 
+    0% 
+        background-position: 0% 50%
+    
+    50% 
+        background-position: 100% 50%
+    
+    100% 
+        background-position: 0% 50%

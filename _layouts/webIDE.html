@@ -14,20 +14,35 @@
         <main class="page-content" aria-label="Content">
             <div class="wrapper">
 
+                <h1 id="title">Text Editor Here</h1>
+            
+                <!-- Editor Block -->
+                <div class="Editor-Container">
+                    <div class="Container">
 
-                <div class="Editor">
-                    <textarea > test </textarea>
-                    <div class="black-page">
-                        <input type="text", placeholder="Super Beta TextEditor Lets code"></input>
+                        <div class="col", id="col">
+
+                            <div class="row">
+                                <pre id="editor"> <code>Edit Here</code> </pre>
+                            </div>
+                            
+                            <div class="row">
+                                <pre id="ans">Test</pre>
+                            </div>
+    
+                        </div>
+
                     </div>
                 </div>
 
 
-                {{ content }}
 
             </div>
-            
         </main>
+
+        <!-- Need to fix bottom spacing -->
+        <div><br><br></div>
+
         {%- include footer.html -%}
     </body>
   

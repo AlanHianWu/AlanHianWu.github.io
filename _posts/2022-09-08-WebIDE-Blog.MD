@@ -9,6 +9,16 @@ Blog: true
 # Updates On This Project 
 ---
 
+
+##### Sep 9 2022 
+
+Looking through online, every project seems to be using a premade package called code mirror to achieve the text editor part,
+it's always best to not reinvent the wheel, but i perfer to create this myself this time exspeically just for the first time.
+
+there is a few ways to go about this task it seems, using [divs] or there is this tag [textarea] that i can use.
+
+---
+
 ##### Sep 8 2022 
 
 I fixed up some issues I found around the site, now I had a look at codepen, hackerRank and google docs, looks like they all use the many divs plus javascript solution, but google docs uses a kanvas element, I'll have to learn about the kanvas tag if I want to go with that opttion. I might just start with the divs options first since my terminal is made that way.
