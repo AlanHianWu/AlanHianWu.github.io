@@ -16,18 +16,14 @@ handleMonseMove = (event) ->
 
 
 
-for i in [1...50]
-    document.getElementById("col").innerHTML += '<div><pre id="editor">' + i + '  <code>TEST</code></pre></div>'
+# for i in [1...50]
+#     document.getElementById("editor").innerHTML += '<pre id="editor">' + i + '  <code>TEST</code></pre>'
 
 
-
-
-
-
-
-
-
-
+# replace all whitespace with span
+# pres = document.querySelectorAll('pre');
+# for i in pres
+#     i.innerHTML = i.innerHTML.replace(/ /g, '<span> </span>')
 
 
 

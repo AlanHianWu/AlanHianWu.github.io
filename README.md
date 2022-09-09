@@ -1,6 +1,8 @@
 # AlanHianWu.github.io
-Show Case
 
-Test
+My Portfolio webpage
 
-Gonna make this my project show-case landing page
+Hosted on hithub with jekyll
+
+check it out [here](alanhianwu.github.io)
+

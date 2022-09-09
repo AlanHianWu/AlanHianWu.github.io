@@ -15,7 +15,6 @@ Blog: true
 Looking through online, every project seems to be using a premade package called code mirror to achieve the text editor part,
 it's always best to not reinvent the wheel, but i perfer to create this myself this time exspeically just for the first time.
 
-there is a few ways to go about this task it seems, using [divs] or there is this tag [textarea] that i can use.
 
 ---
 
