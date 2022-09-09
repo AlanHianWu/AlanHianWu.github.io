@@ -15,6 +15,8 @@ Blog: true
 Looking through online, every project seems to be using a premade package called code mirror to achieve the text editor part,
 it's always best to not reinvent the wheel, but i perfer to create this myself this time exspeically just for the first time.
 
+Found out you can just enable editable text in the tags, so now all I need to worry about is syntax highlight
+
 
 ---
 

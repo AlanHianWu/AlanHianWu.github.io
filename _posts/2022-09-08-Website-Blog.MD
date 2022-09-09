@@ -11,6 +11,13 @@ Blog: true
 ##### Sep 9 2022
 Bit of a slow start today
 
+I have the basics of the text editor now, I'll need some syntax highlighting, servers and some functions to extract the text and format it.
+
+I was thinking it would be nice to have both the web terminal and text editor together, need to look into that.
+
+JavaScript through the FilesAPI can create and edit files in a VM, it would be nice to acess that through the web terminal.
+
+
 ---
 ##### Sep 8 2022
 
@@ -23,8 +30,5 @@ So far I am not very happy with how the website looks, so I'll be working on it 
 I'll need to work on the dark mode some more aswell sincce right now all it does is invert the colours of the background and text, should be simple enough just add more css.
 
 I am still set on making the web terminal the center piece of the web site but stuck on how it will look
-
-
-
 
 ---
