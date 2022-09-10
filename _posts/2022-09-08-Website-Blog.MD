@@ -17,6 +17,8 @@ I was thinking it would be nice to have both the web terminal and text editor to
 
 JavaScript through the FilesAPI can create and edit files in a VM, it would be nice to acess that through the web terminal.
 
+coffeeScript was fun and all but I think I should try out typeScript.
+
 
 ---
 ##### Sep 8 2022
