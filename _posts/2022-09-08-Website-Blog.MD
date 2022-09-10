@@ -8,6 +8,13 @@ Blog: true
 ---
 # Updates On This Project 
 ---
+
+##### Sep 10 2022
+Will be moving over the typeScript soon, I have it installed on the website now, coffeeScript is nice and all, but not that great in terms of community support compared to others.
+
+---
+
+
 ##### Sep 9 2022
 Bit of a slow start today
 

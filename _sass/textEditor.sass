@@ -25,6 +25,11 @@ h1, h2, h3, h4, h5, h6
     ::selection
         background: purple
 
+// #editor
+//     overflow-wrap: break-word
+
+// .editor
+//     overflow-wrap: break-word
 
 // .toggleSpace
 //     pre
@@ -51,16 +56,28 @@ h1, h2, h3, h4, h5, h6
         width: 0px
 
 
+.row 
+    pre
+        white-space: initial
+        overflow-wrap: break-word
+    
+    padding: 0 12px 0 1px
+
+
+
+
 pre
     display: block
+    width: 100%
     font-family: Droid Sans Mono
     font-size: 20px
     color: white
     background: #192841
     margin: 0
-    padding: 12px
+    padding: 12px 20px 12px 12px
     border: 0
     border-radius: 0
+
 
 code
     background: #192841

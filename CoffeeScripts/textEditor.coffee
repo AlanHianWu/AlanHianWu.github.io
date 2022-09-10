@@ -7,30 +7,53 @@ handleMonseMove = (event) ->
 
 
 sayKeyDown = (event) -> 
-    console.log("Down! + ", event.key)
+
     input = document.getElementById('editor')
 
-    console.log "caret", getCaretPos(input)
-    
+    c_pos = getCaretPos(input)
+    console.log "caret", c_pos, event.key
+
+    # textInput(c_pos, event.key)
+
     return false
 
 
 sayKeyUp = (event) -> 
-    console.log("Up! + ", event.key)
 
     return false
 
 
 stopShortCuts = (event) ->
-    console.log(event)
-    return false
 
-textInput = (event) ->
-    document.getElementById("editor").innerHTML += '<pre id="editor">' + event.key + '</pre>'
+    # speical keys
+    # these will need speicial logic due to the browser sharing shortcuts
+    # Tab, 
+    special = [9, '9']
+
+    
+    if event.keyCode in special
+        console.log 'Tab!! =>'
+        event.preventDefault()
+
+
+        arrowRight = new KeyboardEvent('keydown', { keyCode: 48 });
+
+        
+        document.dispatchEvent(arrowRight)
+
+
+
+        # return false
+    
+    return true
+
+
+textInput = (c_pos, key) ->
+    document.getElementById("editor").innerHTML += '<pre id="editor">' + key + '</pre>'
+
 
 getCaretPos = (editDiv) ->
 
-    console.log('caret working!')
     carPos = 0
     if window.getSelection
         
@@ -83,5 +106,5 @@ container.addEventListener('keyup', sayKeyUp)
 
 
 #Stop shortcuts keys so it can be read as editor keys
-# container.onkeydown = stopShortCuts
+container.onkeydown = stopShortCuts
 

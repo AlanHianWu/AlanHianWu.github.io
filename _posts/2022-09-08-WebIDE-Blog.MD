@@ -9,6 +9,14 @@ Blog: true
 # Updates On This Project 
 ---
 
+##### Sep 10 2022 
+
+Working on inputs today, been just using editable=true on the divs so it can take text, but I don't have that much control over the process, and I like using tabs for typing, but with the browser it will read the tab input and skip to the next part, this goes for all keyboard shortcuts so far, so the Idea is to disable keyboard shortcuts on the editor itself and make them myself.
+
+implementing this will be great since I can upgrade the terminal next.
+
+---
+
 
 ##### Sep 9 2022 
 
