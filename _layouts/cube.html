@@ -1,1 +1,66 @@
-work on this later tonight, plan is to have a css or typescript cube
+
+
+{%- include head.html-%}
+<head>
+    <link rel="stylesheet" href="{{ "assets/css/cube.css" | relative_url }}">
+    <script src="{{ 'TypeScripts/js/cube.js' | relative_url }}" defer></script>   
+</head>
+
+
+
+
+<html>
+
+    <body>
+
+        {%- include header.html-%}
+
+        <div class="wrapper">
+
+            
+            <main>
+
+                <br><br><br><br><br><br>
+                <div class="scene">
+                
+                    <div class="cube">
+                        <div class="Top">
+                            <h1>上</h1> 
+                        </div>
+                        <div class="Front">
+                            <h1>前</h1>
+                        </div>
+                        <div class="Right">
+                            <h1>右</h1>
+                        </div>
+                        <div class="Left"> 
+                            <h1>左</h1>
+                        </div>
+                        <div class="Bottom">
+                            <h1>下</h1>
+                        </div>
+                        <div class="Back">
+                            <h1>后</h1>
+                        </div>
+                    </div>
+                </div>
+                <br><br><br><br><br><br>
+
+                {{ content }}
+
+
+            </main>
+    
+
+        </div>
+
+        <br><br>
+        {%- include footer.html-%}
+
+    </body>
+
+</html>>
+
+
+
+
