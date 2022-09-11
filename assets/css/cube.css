@@ -1,6 +1,7 @@
 h1 {
   color: white;
-  font-family: "Roboto Mono" monospace; }
+  font-family: "Roboto Mono" monospace;
+  font-weight: 400; }
 
 .scene {
   height: 300px;
@@ -11,7 +12,7 @@ h1 {
   justify-content: center;
   background: radial-gradient(circle, #e73c7e, #003366 100%);
   background-size: 400% 400%;
-  perspective: 100%;
+  perspective: 800px;
   animation: backgraound-radial-gradient 30s ease infinite; }
 
 .cube {
@@ -19,12 +20,14 @@ h1 {
   height: 100%;
   position: relative;
   transform-style: preserve-3d;
-  animation: Alt-Rotate 20s linear infinite;
+  animation: rotate 20s linear infinite;
   font-size: 2.5em;
   transform: scale(2.5); }
   .cube h1 {
     color: white;
     font-family: monospace; }
+  .cube:hover {
+    animation-play-state: paused; }
 
 .top {
   position: absolute;
@@ -36,6 +39,10 @@ h1 {
   transform: rotate3d(1, 0, 0, 90deg) translateZ(150px);
   line-height: 300px;
   text-align: center; }
+  .top:hover {
+    background: red;
+    transform: scale(1.1) rotate3d(1, 0, 0, 90deg) translateZ(200px);
+    transition-duration: 1s; }
 
 .Front {
   position: absolute;
@@ -47,6 +54,10 @@ h1 {
   transform: rotate3d(1, 0, 0, 0deg) translateZ(150px);
   line-height: 300px;
   text-align: center; }
+  .Front:hover {
+    background: lime;
+    transform: scale(1.1) rotate3d(1, 0, 0, 0deg) translateZ(200px);
+    transition-duration: 1s; }
 
 .Right {
   position: absolute;
@@ -58,6 +69,10 @@ h1 {
   transform: rotate3d(0, 1, 0, 270deg) translateZ(150px);
   line-height: 300px;
   text-align: center; }
+  .Right:hover {
+    background: blue;
+    transform: scale(1.1) rotate3d(0, 1, 0, 270deg) translateZ(200px);
+    transition-duration: 1s; }
 
 .Left {
   position: absolute;
@@ -69,6 +84,10 @@ h1 {
   transform: rotate3d(0, 1, 0, 90deg) translateZ(150px);
   line-height: 300px;
   text-align: center; }
+  .Left:hover {
+    background: yellow;
+    transform: scale(1.1) rotate3d(0, 1, 0, 90deg) translateZ(200px);
+    transition-duration: 1s; }
 
 .Bottom {
   position: absolute;
@@ -80,6 +99,10 @@ h1 {
   transform: rotate3d(1, 0, 0, 90deg) translateZ(-150px);
   line-height: 300px;
   text-align: center; }
+  .Bottom:hover {
+    background: cyan;
+    transform: scale(1.1) rotate3d(1, 0, 0, 90deg) translateZ(-200px);
+    transition-duration: 1s; }
 
 .Back {
   position: absolute;
@@ -91,31 +114,12 @@ h1 {
   transform: rotate3d(1, 0, 0, 0deg) translateZ(-150px);
   line-height: 300px;
   text-align: center; }
+  .Back:hover {
+    background: magenta;
+    transform: scale(1.1) rotate3d(1, 0, 0, 0deg) translateZ(-200px);
+    transition-duration: 1s; }
 
-@keyframes Rotate {
-  0% {
-    transform: rotate3d(1, 0, 0, 0deg); }
-  10% {
-    transform: rotate3d(1, 0, 0, 180deg); }
-  20% {
-    transform: rotate3d(1, 0, 0, 360deg); }
-  30% {
-    transform: rotate3d(1, 0, 0, 0deg); }
-  40% {
-    transform: rotate3d(0, 1, 0, 0deg); }
-  50% {
-    transform: rotate3d(0, 1, 0, 180deg); }
-  60% {
-    transform: rotate3d(0, 1, 0, 360deg); }
-  70% {
-    transform: rotate3d(0, 1, 0, 0deg); }
-  80% {
-    transform: rotate3d(0, 0, 1, 0deg); }
-  90% {
-    transform: rotate3d(0, 0, 1, 180deg); }
-  100% {
-    transform: rotate3d(0, 0, 1, 360deg); } }
-@keyframes Alt-Rotate {
+@keyframes rotate {
   0% {
     transform: translateZ(-100px) rotateY(0deg); }
   10% {

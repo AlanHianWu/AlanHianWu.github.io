@@ -1,4 +1,5 @@
 $translateVar: 150px
+$alt-translateVar: -150px
 $paneSize: 300px
 $outLine: 6px solid white
 
@@ -6,6 +7,7 @@ $outLine: 6px solid white
 h1
     color: white
     font-family: 'Roboto Mono' monospace
+    font-weight: 400
     
 .scene
     height: 300px
@@ -18,7 +20,7 @@ h1
     background: radial-gradient(circle, #e73c7e, rgb(0, 51, 102) 100%)
     background-size: 400% 400%
 
-    perspective: 100%
+    perspective: 800px
 
     animation: backgraound-radial-gradient 30s ease infinite
 
@@ -32,14 +34,16 @@ h1
     //Rotae Cube Here
     // transform: rotate3d(1, 0, 0, 180deg)
 
-    animation: Alt-Rotate 20s linear infinite
+    animation: rotate 20s linear infinite
 
     font-size: 2.5em
     transform: scale(2.5)
     h1
         color: white
         font-family: monospace
-        // opacity: 1    
+    
+    &:hover
+        animation-play-state: paused
 
 
 .top
@@ -54,11 +58,22 @@ h1
     outline: $outLine
     transform: rotate3d(1, 0, 0, 90deg) translateZ($translateVar)
 
+    line-height: $paneSize
+
+    text-align: center
+
+    &:hover
+        background: rgba(255, 0, 0, 1)
+
+        transform: scale(1.1) rotate3d(1, 0, 0, 90deg) translateZ($translateVar + 50px)
+        transition-duration: 1s
     
 
-    line-height: $paneSize
-    text-align: center
     
+    
+
+
+
 
 
 .Front
@@ -76,6 +91,13 @@ h1
     line-height: $paneSize
     text-align: center
 
+    &:hover
+        background: rgba(0, 255, 0, 1)
+    
+        transform: scale(1.1) rotate3d(1, 0, 0, 0deg) translateZ($translateVar + 50px)
+        transition-duration: 1s
+        
+
 
 .Right
     position: absolute
@@ -91,6 +113,12 @@ h1
 
     line-height: $paneSize
     text-align: center
+
+    &:hover
+        background: rgba(0, 0, 255, 1)
+
+        transform: scale(1.1) rotate3d(0, 1, 0, 270deg) translateZ($translateVar + 50px)
+        transition-duration: 1s
 
 
 .Left
@@ -108,6 +136,12 @@ h1
     line-height: $paneSize
     text-align: center
 
+    &:hover
+        background: rgba(255, 255, 0, 1)
+
+        transform: scale(1.1) rotate3d(0, 1, 0, 90deg) translateZ($translateVar + 50px)
+        transition-duration: 1s
+
 
 .Bottom
     position: absolute
@@ -119,10 +153,16 @@ h1
     border-radius: 2px
     background: rgba(0, 255, 255, 0.5)
     outline: $outLine
-    transform: rotate3d(1, 0, 0, 90deg) translateZ(-$translateVar)
+    transform: rotate3d(1, 0, 0, 90deg) translateZ($alt-translateVar)
 
     line-height: $paneSize
     text-align: center
+
+    &:hover
+        background: rgba(0, 255, 255, 1)
+
+        transform: scale(1.1)  rotate3d(1, 0, 0, 90deg) translateZ($translateVar - 350px)
+        transition-duration: 1s
 
 
 .Back
@@ -135,41 +175,23 @@ h1
     border-radius: 2px
     background: rgba(255, 0, 255, 0.5)
     outline: $outLine
-    transform: rotate3d(1, 0, 0, 0deg) translateZ(-$translateVar)
+    transform: rotate3d(1, 0, 0, 0deg) translateZ($alt-translateVar)
 
     line-height: $paneSize
     text-align: center
 
+    &:hover
+        background: rgba(255, 0, 255, 1)
 
-// To Animate
+        transform: scale(1.1) rotate3d(1, 0, 0, 0deg) translateZ($translateVar - 350px)
+        transition-duration: 1s
+
+
+
 
 // KeyFrames
-@keyframes Rotate 
-    0%
-        transform: rotate3d(1, 0, 0, 0deg)
-    10%
-        transform: rotate3d(1, 0, 0, 180deg)
-    20%
-        transform: rotate3d(1, 0, 0, 360deg)
-    30%
-        transform: rotate3d(1, 0, 0, 0deg)
-    40%
-        transform: rotate3d(0, 1, 0, 0deg)
-    50%
-        transform: rotate3d(0, 1, 0, 180deg)
-    60%
-        transform: rotate3d(0, 1, 0, 360deg)
-    70%
-        transform: rotate3d(0, 1, 0, 0deg)
-    80%
-        transform: rotate3d(0, 0, 1, 0deg)
-    90%
-        transform: rotate3d(0, 0, 1, 180deg)
-    100%
-        transform: rotate3d(0, 0, 1, 360deg)
 
-
-@keyframes Alt-Rotate
+@keyframes rotate
     0%
         transform: translateZ(-100px) rotateY(   0deg)
     10%

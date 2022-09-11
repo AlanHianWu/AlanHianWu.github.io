@@ -93,9 +93,11 @@ body, h1, h2, h3 p {
   color: white;
   padding: 12px 0 0 0;
   outline-width: 0;
+  outline: none;
   font-size: 16px;
   font-family: "Roboto Mono" monospace;
-  border-radius: 0 0 6px 6px; }
+  border-radius: 0 0 6px 6px;
+  focus-outline: none; }
 
 @keyframes gradient {
   0% {
