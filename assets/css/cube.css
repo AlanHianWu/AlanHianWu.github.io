@@ -30,6 +30,7 @@ h1 {
   position: absolute;
   height: 300px;
   width: 300px;
+  border-radius: 2px;
   background: rgba(255, 0, 0, 0.5);
   outline: 6px solid white;
   transform: rotate3d(1, 0, 0, 90deg) translateZ(150px);
@@ -40,6 +41,7 @@ h1 {
   position: absolute;
   height: 300px;
   width: 300px;
+  border-radius: 2px;
   background: rgba(0, 255, 0, 0.5);
   outline: 6px solid white;
   transform: rotate3d(1, 0, 0, 0deg) translateZ(150px);
@@ -50,6 +52,7 @@ h1 {
   position: absolute;
   height: 300px;
   width: 300px;
+  border-radius: 2px;
   background: rgba(0, 0, 255, 0.5);
   outline: 6px solid white;
   transform: rotate3d(0, 1, 0, 270deg) translateZ(150px);
@@ -60,6 +63,7 @@ h1 {
   position: absolute;
   height: 300px;
   width: 300px;
+  border-radius: 2px;
   background: rgba(255, 255, 0, 0.5);
   outline: 6px solid white;
   transform: rotate3d(0, 1, 0, 90deg) translateZ(150px);
@@ -70,6 +74,7 @@ h1 {
   position: absolute;
   height: 300px;
   width: 300px;
+  border-radius: 2px;
   background: rgba(0, 255, 255, 0.5);
   outline: 6px solid white;
   transform: rotate3d(1, 0, 0, 90deg) translateZ(-150px);
@@ -80,6 +85,7 @@ h1 {
   position: absolute;
   height: 300px;
   width: 300px;
+  border-radius: 2px;
   background: rgba(255, 0, 255, 0.5);
   outline: 6px solid white;
   transform: rotate3d(1, 0, 0, 0deg) translateZ(-150px);
