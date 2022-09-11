@@ -8,6 +8,14 @@ Blog: true
 ---
 # Updates On This Project 
 ---
+##### Sep 11 2022
+Just finished a small exercise with cube css, I wanted to know how it was done, and also how keyframes work with css.
+Plan on going back to WebIDE for a bit so I can show the code for the cube, and other projects I have and plan on doing;
+or I plan on expanding the cube excerise to make a Tesseract with just css.
+
+making the cube interactive is on the menue aswell since now looking at it, I want to be able to rotate it manually.
+
+---
 
 ##### Sep 10 2022
 Will be moving over the typeScript soon, I have it installed on the website now, coffeeScript is nice and all, but not that great in terms of community support compared to others.
