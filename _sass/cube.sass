@@ -9,11 +9,14 @@ h1
     font-family: 'Roboto Mono' monospace
     font-weight: 400
     
+    margin: 0
+    padding: 0
+    border: 0
+
 .scene
     height: 300px
     width: 300px
     border-radius: 6px
-    margin: 0
     padding: 300px
     justify-content: center
 
@@ -35,6 +38,7 @@ h1
     // transform: rotate3d(1, 0, 0, 180deg)
 
     animation: rotate 20s linear infinite
+    display: flex
 
     font-size: 2.5em
     transform: scale(2.5)
@@ -48,41 +52,30 @@ h1
 
 .top
     position: absolute
-    // bottom: 50%
-    // left: 10%
-
     height: $paneSize
     width: $paneSize
+
     border-radius: 2px
     background: rgba(255, 0, 0, 0.5)
     outline: $outLine
     transform: rotate3d(1, 0, 0, 90deg) translateZ($translateVar)
 
     line-height: $paneSize
-
     text-align: center
 
     &:hover
         background: rgba(255, 0, 0, 1)
 
-        transform: scale(1.1) rotate3d(1, 0, 0, 90deg) translateZ($translateVar + 50px)
+        transform: rotate3d(1, 0, 0, 90deg) translateZ($translateVar + 10px) scale(1.2)
         transition-duration: 1s
-    
-
-    
-    
-
-
-
+   
 
 
 .Front
     position: absolute
-    // top: 13%
-    // left: 10%
-
     height: $paneSize
     width: $paneSize
+
     border-radius: 2px
     background: rgba(0, 255, 0, 0.5)
     outline: $outLine
@@ -94,8 +87,9 @@ h1
     &:hover
         background: rgba(0, 255, 0, 1)
     
-        transform: scale(1.1) rotate3d(1, 0, 0, 0deg) translateZ($translateVar + 50px)
+        transform: rotate3d(1, 0, 0, 0deg) translateZ($translateVar + 10px) scale(1.2)
         transition-duration: 1s
+        
         
 
 
@@ -117,8 +111,9 @@ h1
     &:hover
         background: rgba(0, 0, 255, 1)
 
-        transform: scale(1.1) rotate3d(0, 1, 0, 270deg) translateZ($translateVar + 50px)
+        transform: rotate3d(0, 1, 0, 270deg) translateZ($translateVar + 10px) scale(1.2)
         transition-duration: 1s
+    
 
 
 .Left
@@ -139,8 +134,9 @@ h1
     &:hover
         background: rgba(255, 255, 0, 1)
 
-        transform: scale(1.1) rotate3d(0, 1, 0, 90deg) translateZ($translateVar + 50px)
+        transform: rotate3d(0, 1, 0, 90deg) translateZ($translateVar + 10px) scale(1.2)
         transition-duration: 1s
+    
 
 
 .Bottom
@@ -161,8 +157,9 @@ h1
     &:hover
         background: rgba(0, 255, 255, 1)
 
-        transform: scale(1.1)  rotate3d(1, 0, 0, 90deg) translateZ($translateVar - 350px)
+        transform: rotate3d(1, 0, 0, 90deg) translateZ($translateVar - 310px) scale(1.2)
         transition-duration: 1s
+    
 
 
 .Back
@@ -183,9 +180,8 @@ h1
     &:hover
         background: rgba(255, 0, 255, 1)
 
-        transform: scale(1.1) rotate3d(1, 0, 0, 0deg) translateZ($translateVar - 350px)
+        transform: rotate3d(1, 0, 0, 0deg) translateZ($translateVar - 310px) scale(1.2)
         transition-duration: 1s
-
 
 
 
