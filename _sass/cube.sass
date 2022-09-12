@@ -13,6 +13,10 @@ h1
     padding: 0
     border: 0
 
+a
+    &:hover
+        text-decoration: none
+
 .scene
     height: 300px
     width: 300px
@@ -68,6 +72,7 @@ h1
 
         transform: rotate3d(1, 0, 0, 90deg) translateZ($translateVar + 10px) scale(1.2)
         transition-duration: 1s
+
    
 
 
@@ -89,6 +94,7 @@ h1
     
         transform: rotate3d(1, 0, 0, 0deg) translateZ($translateVar + 10px) scale(1.2)
         transition-duration: 1s
+        
         
         
 
@@ -210,6 +216,13 @@ h1
         transform: translateZ(-100px) rotateY( -90deg)
     100%
         transform: translateZ(-100px) rotateY(   0deg)
+
+// .cube.show-front   transform: translateZ(-100px) rotateY(   0deg)
+// .cube.show-right   transform: translateZ(-100px) rotateY( -90deg)
+// .cube.show-back    transform: translateZ(-100px) rotateY(-180deg)
+// .cube.show-left    transform: translateZ(-100px) rotateY(  90deg)
+// .cube.show-top     transform: translateZ(-100px) rotateX( -90deg)
+// .cube.show-bottom  transform: translateZ(-100px) rotateX(  90deg)
 
 
 @keyframes backgraound-radial-gradient

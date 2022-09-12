@@ -8,6 +8,12 @@ Blog: true
 ---
 # Updates On This Project 
 ---
+##### Sep 12 2022
+I was thinking of fixing up the dark mode button, that was this first thing I worked on, on this website and it does not have a good css file yet, another more pressing matter is the fact that my darkmode is not persistence, looking into how people do it, seems like everyone uses cookies to store the state of dark mode, so I was about to get started on that, but this other project keeped knocking on the back of my head and that is web-terminal and webIDE, the IDE still needs the text editor finished before any DE can be built (I was planing to just link it up with my pi zero use apache flask node what ever, but man the pi zero is slow) and I need the terminal to do terminal things, I racked my head around for a few days now and have a basic Idea of how it will work, (looking into webassemly can be a great solution) there are tons of projects out there that can simulate a desktop so I'll need to grab the knowledge needed for these projects from there. Any how, late last night I wanted to fix up the darkmode button booted up the project and found out that I'll have to fix my typescript config and refactor some things since now I want to use typescript moving forward and darkmode was written in coffeScript, future me will solve it, says past me . . . . . .
+
+
+---
+
 ##### Sep 11 2022
 Just finished a small exercise with cube css, I wanted to know how it was done, and also how keyframes work with css.
 Plan on going back to WebIDE for a bit so I can show the code for the cube, and other projects I have and plan on doing;

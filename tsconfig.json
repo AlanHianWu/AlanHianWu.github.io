@@ -5,6 +5,6 @@
         "module": "commonjs",
         "target": "ES5",
         "outDir": "TypeScripts/js",
-        "rootDir": "TypeScripts"
-    }
+    },
+    "exclude": ["_site"]
 }

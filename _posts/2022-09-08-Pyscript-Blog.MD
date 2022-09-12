@@ -11,7 +11,7 @@ Blog: true
 # Updates On This Project 
 ---
 
----
+
 ##### Sep 9 2022
 
 haven't been looking into this today, but there needs some optimazing to be done, it takes forever for the runtime to get setup, might need to create some caching solution
