@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-// messing around to see how it works
+// messing around indexedDB to see how it works
 const indexedDB = window.indexedDB;
 const request = indexedDB.open("exampleDB", 1);
 // error handling
@@ -48,7 +48,25 @@ request.onsuccess = function () {
     };
     // close db
     transaction.oncomplete = function () {
+        console.log('DB closed');
         db.close();
     };
     //test
 };
+// end of indexedDB
+// start of localStorage
+localStorage.setItem('name', 'Bob');
+console.log('Local Storage HERE! ', localStorage.getItem('name'));
+// end of localStorage
+// start of SessionStorage
+sessionStorage.setItem('name', 'Alice');
+console.log('Session Storage HERE! ', sessionStorage.getItem('name'));
+// end of SessionStorage
+// start of Cookies
+document.cookie = 'name=marry; expires=' + new Date(2023, 0, 1).toUTCString();
+console.log('COOKIE HERE! ', document.cookie);
+// end of Cookies
+// start of caching
+// end of caching
+// see storage Manager
+console.log('Storage? => ', navigator.storage.estimate());
