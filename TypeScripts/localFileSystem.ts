@@ -100,6 +100,24 @@ console.log('COOKIE HERE! ', document.cookie);
 
 // start of caching
 
+// check avaible
+
+
+if (navigator.serviceWorker) {
+    // console.log('service supported');
+    window.addEventListener('load', () => {
+        // register path is relative to the html page so the service worker js file needs to be in the same dir as the html arhhhh.
+        navigator.serviceWorker
+        .register('/TypeScripts/js/serviceWorker.js')
+        .then(reg => console.log('service worker regestered!'))
+        .catch(err => console.log(`service worker: error ${err}`));
+    });
+
+
+
+};
+
+
 
 // end of caching
 
