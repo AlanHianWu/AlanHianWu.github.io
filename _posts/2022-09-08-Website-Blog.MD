@@ -7,6 +7,14 @@ Blog: true
 
 ---
 # Updates On This Project 
+
+---
+##### Sep 12 2022
+Spend the better part of yesterday learning bits about webassembly, and testing/ implemeting local file systems on the website, I am thinking that using the indexeddb, I can use javascript logic and actually have a great terminal simulator, not mentioning, webassem can just staright up compile an actual terminal and plot it into a browser.
+
+Runing into some issues though, jekyll's files systems might be making it difficult to implement service workers for caching, keep geting this scope error, from what I have found, seems like the service worker file must be in the same dir of the html, I might be wrong though, I'll have to figure this out today, that said, when I do have this problem sorted, I'll have control over all types of file systems in the browser now. I did thought that I will be memory limited for a browser client side file system, but to my surprise, modern browser give you gigs of memory to mess with (havn't tested it out yet), with chrome giving you a percentage of total storage on the device, no wonder chrome is know as a memory hog.
+
+
 ---
 ##### Sep 12 2022
 I was thinking of fixing up the dark mode button, that was this first thing I worked on, on this website and it does not have a good css file yet, another more pressing matter is the fact that my darkmode is not persistence, looking into how people do it, seems like everyone uses cookies to store the state of dark mode, so I was about to get started on that, but this other project keeped knocking on the back of my head and that is web-terminal and webIDE, the IDE still needs the text editor finished before any DE can be built (I was planing to just link it up with my pi zero use apache flask node what ever, but man the pi zero is slow) and I need the terminal to do terminal things, I racked my head around for a few days now and have a basic Idea of how it will work, (looking into webassemly can be a great solution) there are tons of projects out there that can simulate a desktop so I'll need to grab the knowledge needed for these projects from there. Any how, late last night I wanted to fix up the darkmode button booted up the project and found out that I'll have to fix my typescript config and refactor some things since now I want to use typescript moving forward and darkmode was written in coffeScript, future me will solve it, says past me . . . . . .
