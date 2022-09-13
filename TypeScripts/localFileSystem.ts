@@ -108,9 +108,9 @@ if (navigator.serviceWorker) {
     window.addEventListener('load', () => {
         // register path is relative to the html page so the service worker js file needs to be in the same dir as the html arhhhh.
         navigator.serviceWorker
-        .register('/TypeScripts/js/serviceWorker.js')
+        .register('/root_serviceWorker.js')
         .then(reg => console.log('service worker regestered!'))
-        .catch(err => console.log(`service worker: error ${err}`));
+        .catch(err => console.log(`service worker Error: ${err}`));
     });
 
 

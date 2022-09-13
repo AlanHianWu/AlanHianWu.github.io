@@ -9,10 +9,16 @@ Blog: true
 # Updates On This Project 
 
 ---
-##### Sep 12 2022
-Spend the better part of yesterday learning bits about webassembly, and testing/ implemeting local file systems on the website, I am thinking that using the indexeddb, I can use javascript logic and actually have a great terminal simulator, not mentioning, webassem can just staright up compile an actual terminal and plot it into a browser.
+##### Sep 13 2022
+Spend the better part of yesterday learning bits about webassembly, and testing/ implemeting local file systems on the website, I am thinking that using the indexedDB, I can use javascript logic and actually have a great terminal simulator, not mentioning, webassem can just staright up compile an actual terminal and plot it into the browser.
 
-Runing into some issues though, jekyll's files systems might be making it difficult to implement service workers for caching, keep geting this scope error, from what I have found, seems like the service worker file must be in the same dir of the html, I might be wrong though, I'll have to figure this out today, that said, when I do have this problem sorted, I'll have control over all types of file systems in the browser now. I did thought that I will be memory limited for a browser client side file system, but to my surprise, modern browser give you gigs of memory to mess with (havn't tested it out yet), with chrome giving you a percentage of total storage on the device, no wonder chrome is know as a memory hog.
+Runing into some issues though, jekyll's files systems might be making it difficult to implement service workers for caching, keep geting this scope error, from what I have found, seems like the service worker file must be in the same dir of the html, I might be wrong though, I'll have to figure this out today, that said, when I do have this problem sorted, I'll have control over all types of file systems in the browser now. 
+I did expect to run into memory limits since all the websites states that browsers on average only gives you 5-10MB of storage, but to my surprise, modern browser give you gigs of memory to mess with (havn't tested it out yet) if you know what you'll doing, with chrome giving you a percentage of remaining disk space.
+
+#### Noon update: 
+Fixed the service work error, seems like it has to be at the root of the site and typeScript's wrapping on the generated javaScript was the culprit, gonna work around it a bit to see if I can get typeScript working on it.
+
+Fixed up the issues related to caching now, gonna tidy up the project [Local File System] so you can click on things and see what's happening, I'll then flesh out the local storage script so I can use it in future projects (naming the terminal and webIDE one for now).
 
 
 ---
