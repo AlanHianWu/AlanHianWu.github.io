@@ -7,4 +7,4 @@ Blog: false
 
 # Testing localfilesystem with typeScript
 
-I want to create a local file system to play with on the client side, client side due to not having or really wanting to have a server.
+Temp file, testing and debuging client side file systems, open console and check cache, cookies, local storage, session storage and indexedDB should have something init.
