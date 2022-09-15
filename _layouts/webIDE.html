@@ -8,7 +8,10 @@
 
         <head>
             <link rel="stylesheet" href="{{ "assets/css/textEditor.css" | relative_url }}">
-            <script src="{{ 'CoffeeScripts/js/textEditor.js' | relative_url }}" defer></script>
+            <!-- <script src="{{ 'CoffeeScripts/js/textEditor.js' | relative_url }}" defer></script> -->
+            <script>var exports = {};</script>
+            <script src="{{ 'TypeScripts/js/textEditor.js' | relative_url }}" defer></script>
+
         </head>
         
         <main class="page-content" aria-label="Content">

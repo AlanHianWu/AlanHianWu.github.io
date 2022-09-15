@@ -23,8 +23,11 @@ let stopShortCuts = (event) => {
 
     // using keycodes to filter out keys
     var special = [9];
-    if (event.keycode in special) {
+   
+    if (special.indexOf(event.keyCode) >= 0) {
+        
         event.preventDefault();
+        
     };
 
     return true;
