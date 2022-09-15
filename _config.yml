@@ -33,9 +33,14 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-coffeescript
+  - jekyll-last-modified-at
 
 sass:
     style: compressed
+
+
+last-modified-at:
+    date-format: '%d-%b-%y'
 
 
 # Exclude from processing.
