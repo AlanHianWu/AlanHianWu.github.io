@@ -11,6 +11,9 @@ Blog: true
 ##### Sep 15 2022
 Seems like github pages only allows whitelisted gems, so making a automatically updating section will need more work. So now all I can do is manually change the dates...
 
+Night
+Been messing around with ocr on japanese and chinese character with the tesseract project, the accuracy of it is insane; that and perparing on the side for an online assessment coming up soon. Always been my plan to create that online IDE and upload these might as well get seriously started.
+
 ---
 ##### Sep 13 2022
 Spend the better part of yesterday learning bits about webassembly, and testing/ implemeting local file systems on the website, I am thinking that using the indexedDB, I can use javascript logic and actually have a great terminal simulator, not mentioning, webassem can just staright up compile an actual terminal and plot it into the browser.
