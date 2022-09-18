@@ -1,0 +1,135 @@
+h1 {
+  color: white;
+  font-family: "Roboto Mono" monospace;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+a:hover {
+  text-decoration: none; }
+
+.scene {
+  height: 300px;
+  width: 300px;
+  border-radius: 6px;
+  padding: 300px;
+  justify-content: center;
+  background: radial-gradient(circle, #e73c7e, #003366 100%);
+  background-size: 400% 400%;
+  perspective: 800px;
+  animation: backgraound-radial-gradient 30s ease infinite; }
+
+.cube {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  display: flex;
+  font-size: 2.5em;
+  transform: scale(2.5); }
+  .cube h1 {
+    color: white;
+    font-family: monospace; }
+  .cube:hover {
+    animation-play-state: paused; }
+
+.top {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  border-radius: 2px;
+  background: rgba(255, 0, 0, 0.5);
+  outline: 6px solid white;
+  transform: rotate3d(1, 0, 0, 90deg) translateZ(150px);
+  line-height: 300px;
+  text-align: center; }
+  .top:hover {
+    background: red;
+    transform: rotate3d(1, 0, 0, 90deg) translateZ(160px) scale(1.2);
+    transition-duration: 1s; }
+
+.Front {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  border-radius: 2px;
+  background: rgba(0, 255, 0, 0.5);
+  outline: 6px solid white;
+  transform: rotate3d(1, 0, 0, 0deg) translateZ(150px);
+  line-height: 300px;
+  text-align: center; }
+  .Front:hover {
+    background: lime;
+    transform: rotate3d(1, 0, 0, 0deg) translateZ(160px) scale(1.2);
+    transition-duration: 1s; }
+
+.Right {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  border-radius: 2px;
+  background: rgba(0, 0, 255, 0.5);
+  outline: 6px solid white;
+  transform: rotate3d(0, 1, 0, 270deg) translateZ(150px);
+  line-height: 300px;
+  text-align: center; }
+  .Right:hover {
+    background: blue;
+    transform: rotate3d(0, 1, 0, 270deg) translateZ(160px) scale(1.2);
+    transition-duration: 1s; }
+
+.Left {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  border-radius: 2px;
+  background: rgba(255, 255, 0, 0.5);
+  outline: 6px solid white;
+  transform: rotate3d(0, 1, 0, 90deg) translateZ(150px);
+  line-height: 300px;
+  text-align: center; }
+  .Left:hover {
+    background: yellow;
+    transform: rotate3d(0, 1, 0, 90deg) translateZ(160px) scale(1.2);
+    transition-duration: 1s; }
+
+.Bottom {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  border-radius: 2px;
+  background: rgba(0, 255, 255, 0.5);
+  outline: 6px solid white;
+  transform: rotate3d(1, 0, 0, 90deg) translateZ(-150px);
+  line-height: 300px;
+  text-align: center; }
+  .Bottom:hover {
+    background: cyan;
+    transform: rotate3d(1, 0, 0, 90deg) translateZ(-160px) scale(1.2);
+    transition-duration: 1s; }
+
+.Back {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  border-radius: 2px;
+  background: rgba(255, 0, 255, 0.5);
+  outline: 6px solid white;
+  transform: rotate3d(1, 0, 0, 0deg) translateZ(-150px);
+  line-height: 300px;
+  text-align: center; }
+  .Back:hover {
+    background: magenta;
+    transform: rotate3d(1, 0, 0, 0deg) translateZ(-160px) scale(1.2);
+    transition-duration: 1s; }
+
+@keyframes backgraound-radial-gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+/*# sourceMappingURL=tesseract.css.map */
