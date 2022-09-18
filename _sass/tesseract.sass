@@ -1,0 +1,251 @@
+$translateVar: 150px
+$alt-translateVar: -150px
+$paneSize: 300px
+$outLine: 6px solid white
+
+
+h1
+    color: white
+    font-family: 'Roboto Mono' monospace
+    font-weight: 400
+    
+    margin: 0
+    padding: 0
+    border: 0
+
+a
+    &:hover
+        text-decoration: none
+
+.scene
+    height: 300px
+    width: 300px
+    border-radius: 6px
+    padding: 300px
+    justify-content: center
+
+    background: radial-gradient(circle, #e73c7e, rgb(0, 51, 102) 100%)
+    background-size: 400% 400%
+
+    perspective: 800px
+
+    animation: backgraound-radial-gradient 30s ease infinite
+
+
+.cube
+    width: 100%
+    height: 100%
+    position: relative
+    transform-style: preserve-3d
+
+    //Rotae Cube Here
+    // transform: rotate3d(1, 0, 0, 180deg)
+
+    // animation: rotate 20s linear infinite
+    display: flex
+
+    font-size: 2.5em
+    transform: scale(2.5)
+    h1
+        color: white
+        font-family: monospace
+    
+    &:hover
+        animation-play-state: paused
+
+
+.top
+    position: absolute
+    height: $paneSize
+    width: $paneSize
+
+    border-radius: 2px
+    background: rgba(255, 0, 0, 0.5)
+    outline: $outLine
+    transform: rotate3d(1, 0, 0, 90deg) translateZ($translateVar)
+
+    line-height: $paneSize
+    text-align: center
+
+    &:hover
+        background: rgba(255, 0, 0, 1)
+
+        transform: rotate3d(1, 0, 0, 90deg) translateZ($translateVar + 10px) scale(1.2)
+        transition-duration: 1s
+
+   
+
+
+.Front
+    position: absolute
+    height: $paneSize
+    width: $paneSize
+
+    border-radius: 2px
+    background: rgba(0, 255, 0, 0.5)
+    outline: $outLine
+    transform: rotate3d(1, 0, 0, 0deg) translateZ($translateVar)
+
+    line-height: $paneSize
+    text-align: center
+
+    &:hover
+        background: rgba(0, 255, 0, 1)
+    
+        transform: rotate3d(1, 0, 0, 0deg) translateZ($translateVar + 10px) scale(1.2)
+        transition-duration: 1s
+        
+        
+        
+
+
+.Right
+    position: absolute
+    // top: 13%
+    // right: 55%
+
+    height: $paneSize
+    width: $paneSize
+    border-radius: 2px
+    background: rgba(0, 0, 255, 0.5)
+    outline: $outLine
+    transform: rotate3d(0, 1, 0, 270deg) translateZ($translateVar)
+
+    line-height: $paneSize
+    text-align: center
+
+    &:hover
+        background: rgba(0, 0, 255, 1)
+
+        transform: rotate3d(0, 1, 0, 270deg) translateZ($translateVar + 10px) scale(1.2)
+        transition-duration: 1s
+    
+
+
+.Left
+    position: absolute
+    // top: 13%
+    // left: 50%
+
+    height: $paneSize
+    width: $paneSize
+    border-radius: 2px
+    background: rgba(255, 255, 0, 0.5)
+    outline: $outLine
+    transform: rotate3d(0, 1, 0, 90deg) translateZ($translateVar)
+
+    line-height: $paneSize
+    text-align: center
+
+    &:hover
+        background: rgba(255, 255, 0, 1)
+
+        transform: rotate3d(0, 1, 0, 90deg) translateZ($translateVar + 10px) scale(1.2)
+        transition-duration: 1s
+    
+
+
+.Bottom
+    position: absolute
+    // top: 50%
+    // left: 10%
+
+    height: $paneSize
+    width: $paneSize
+    border-radius: 2px
+    background: rgba(0, 255, 255, 0.5)
+    outline: $outLine
+    transform: rotate3d(1, 0, 0, 90deg) translateZ($alt-translateVar)
+
+    line-height: $paneSize
+    text-align: center
+
+    &:hover
+        background: rgba(0, 255, 255, 1)
+
+        transform: rotate3d(1, 0, 0, 90deg) translateZ($translateVar - 310px) scale(1.2)
+        transition-duration: 1s
+    
+
+
+.Back
+    position: absolute
+    // top: 13%
+    // left: 10%
+
+    height: $paneSize
+    width: $paneSize
+    border-radius: 2px
+    background: rgba(255, 0, 255, 0.5)
+    outline: $outLine
+    transform: rotate3d(1, 0, 0, 0deg) translateZ($alt-translateVar)
+
+    line-height: $paneSize
+    text-align: center
+
+    &:hover
+        background: rgba(255, 0, 255, 1)
+
+        transform: rotate3d(1, 0, 0, 0deg) translateZ($translateVar - 310px) scale(1.2)
+        transition-duration: 1s
+
+
+
+// KeyFrames
+
+// @keyframes rotate
+//     0%
+//         transform: translateZ(-100px) rotateY(   0deg)
+//     10%
+//         transform: translateZ(-100px) rotateY( -90deg)
+//     20%
+//         transform: translateZ(-100px) rotateY(-180deg)
+//     30%
+//         transform: translateZ(-100px) rotateY(  90deg)
+//     40%
+//         transform: translateZ(-100px) rotateX( -90deg)
+//     50%
+//         transform: translateZ(-100px) rotateX(  90deg)
+//     60%
+//         transform: translateZ(-100px) rotateX( -90deg)
+//     70%
+//         transform: translateZ(-100px) rotateY(  90deg)
+//     80%
+//         transform: translateZ(-100px) rotateY(-180deg)
+//     90%
+//         transform: translateZ(-100px) rotateY( -90deg)
+//     100%
+//         transform: translateZ(-100px) rotateY(   0deg)
+
+
+
+@keyframes backgraound-radial-gradient
+    0% 
+        background-position: 0% 50%
+    
+    50% 
+        background-position: 100% 50%
+    
+    100% 
+        background-position: 0% 50%
+
+
+
+    
+// @keyframes rotateAnimation {
+// 	from {transform: rotateY(45deg);}
+// 	to {transform: rotateY(225deg);}
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
