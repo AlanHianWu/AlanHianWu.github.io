@@ -1,7 +1,7 @@
 ---
 layout: algorithms_showcase
 title:  "Algorithms"
-categories: projects
+categories: test
 Blog: false
 ---
 
