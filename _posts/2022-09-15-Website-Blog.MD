@@ -7,6 +7,10 @@ Blog: true
 
 ---
 # Updates On This Project 
+--- 
+#### Sep 21 2022
+Just nearly no work done on this last week, just minor fixes and setup for some of my project due to me studying for some coding tests.
+
 ---
 ##### Sep 15 2022
 Seems like github pages only allows whitelisted gems, so making a automatically updating section will need more work. So now all I can do is manually change the dates...
