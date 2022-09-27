@@ -8,13 +8,13 @@ Blog: true
 ---
 # Updates On This Project 
 --- 
-#### Sep 27 2022
+##### Sep 27 2022
 Been praticing my coding skills for any coding interviews I'll have to take, none so far... and I think I caought a bad rash somehow in the last 3 days...
 anyhow, I'll have to schedule this website work with my pratice togeather.
 
 
 ---
-#### Sep 21 2022
+##### Sep 21 2022
 Just nearly no work done on this last week, just minor fixes and setup for some of my project due to me studying for some coding tests.
 
 ---
